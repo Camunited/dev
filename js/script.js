@@ -5,17 +5,17 @@
       var camunited = {};
 
        // Navigations
-      var homeHtml = "assets/snippets/home-snippet.html";
-      var gifloadingHtml = "assets/snippets/gif-snippets.html";
-      var productsHtml = "navigations/Products/index.html";
-      var assetsHtml = "navigations/Assets/index.html";
-        var expertisesHtml = "navigations/Assets/Expertises/index.html";
-        var applicationsHtml = "navigations/Assets/Applications/index.html";
-        var intelligencesHtml = "navigations/Assets/Intelligences/index.html";
-      var servicesHtml = "navigations/Services//index.html";
-        var webdevelopmentsHtml = "navigations/Services/Web-Developments/index.html";
-        var computingprogrammingsHtml = "navigations/Services/Computing-Programmings/index.html";
-        var ethicalhackingsHtml = "navigations/Services/Ethical-Hackings/index.html";
+      var homeHtml = "navigations/Home/home-snippet.html";
+      var gifloadingHtml = "navigations/Home/gif-snippets.html";
+      var productsHtml = "products/index.html";
+      var assetsHtml = "assets/index.html";
+        var expertisesHtml = "navigations/Expertises/index.html";
+        var applicationsHtml = "navigations/Applications/index.html";
+        var intelligencesHtml = "navigations/Intelligences/index.html";
+      var servicesHtml = "services/index.html";
+        var webdevelopmentsHtml = "navigations/Web-Developments/index.html";
+        var computingprogrammingsHtml = "navigations/Computing-Programmings/index.html";
+        var ethicalhackingsHtml = "navigations/Ethical-Hackings/index.html";
         
 
        // Footer Nav Sites
@@ -1133,7 +1133,7 @@
                     function (responseText) {
                       var productsnavdbs = responseText;
                       global.$camunited.$productsnavdbs = productsnavdbs
-                      document.querySelector("#main-jumbotron")
+                      document.querySelector("html")
                         .innerHTML = productsnavdbs;
                     },
                     false);
