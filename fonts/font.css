@@ -1,0 +1,125 @@
+				/***** Fonts *****/
+    /* Agis */
+@font-face {
+    font-family: 'agisbold';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/agis/agis-bold-webfont.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'agisextralight';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/agis/agis-extralight-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'agislight';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/agis/agis-light-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'agismedium';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/agis/agis-medium-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'agisregular';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/agis/agis-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+    /* Close Agis */
+
+    /* Sarun Pro */
+@font-face {
+    font-family: 'sarun_pro_boldbold';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/sarunpro/sarunpro-bold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sarun_pro_bold_italicBdIt';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/sarunpro/sarunpro-bolditalic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sarun_pro_regularregular';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/sarunpro/sarunpro-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sarun_proregular_italic';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/sarunpro/sarunpro-regularitalic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+    /* Close Sarun Pro */
+
+    /* TTFirsNeue */
+@font-face {
+    font-family: 'tt_firs_neuebold';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/ttfirsneue/ttfirsneue-bold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tt_firs_neuebold_italic';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/ttfirsneue/ttfirsneue-bolditalic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tt_firs_neueitalic';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/ttfirsneue/ttfirsneue-italic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tt_firs_neuelight';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/ttfirsneue/ttfirsneue-light-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tt_firs_neuelight_italic';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/ttfirsneue/ttfirsneue-lightitalic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tt_firs_neuemedium';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/ttfirsneue/ttfirsneue-medium-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tt_firs_neuemedium_italic';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/ttfirsneue/ttfirsneue-mediumitalic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tt_firs_neueregular';
+    src: url('https://austinmattix23712.github.io/camunited/fonts/ttfirsneue/ttfirsneue-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+    /* Close TTFirsNeue */
+
+    /* Arial */
+
+    /* Close Arial */
+
+
+
+    /* Myriad */
+
+    /* Close Myriad */
+
+
+					/***** Close Fonts *****/
