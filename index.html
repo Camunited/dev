@@ -12,12 +12,13 @@
   <meta name="version" content="1.0">
 
   <link rel="icon" rel="preload" importance="high" type="image/x-icon" href="https://camunited.github.io/dev/assets/svg/CAMUNITED-LOGO.svg"/>
-  <title>CAMUNITED | Professionals · Expertises of Developments</title>
+  <title>CAMUNITED &middot; Professionals | Expertises of Developments</title>
 
           <!-- Script -->
-  <script type="text/javascript" src="js/ajax-utils.js"></script>
+  <script src="js/ajax-utils.js"></script>
   <script src="js/script.js"></script>
-<!--   <script src="js/bootstrap.bundle.min.js"></script> -->
+
+  <!--   <script src="js/bootstrap.bundle.min.js"></script> -->
           
           <!-- JQuery -->
   <script src="js/jquery.min.js"></script>
@@ -31,9 +32,6 @@
   <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8"/>
   <link rel="stylesheet" rel="preload" importance="high" type="text/css" href="fonts/font.css" charset="utf-8">
   <link rel="stylesheet" type="text/css" href="css/mediaqueries.css" charset="utf-8">
-
-    <!-- Pages Snippets CSS -->
-  <link rel="stylesheet" type="text/css" href="navigations/Web-Developments/wb-dev.css" charset="utf-8">
 
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
@@ -63,8 +61,8 @@
     </svg>
     </a>
       <!-- Brand Name -->
-    <a id="navbar-brand-branding" class="navbar-brand mb-0 h1" href="#" rel="preload" importance="high">CAMUNITED
-    </a>
+    <span id="navbar-brand-branding" class="navbar-brand mb-0 h1" rel="preload" importance="high">CAMUNITED
+    </span>
 
       <!-- Collapsable Button -->
     <button id="navbarToggle" class="navbar-toggler d-block d-xxl-none d-xl-none d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
@@ -84,6 +82,15 @@
       <ul id="nav-list" class="navbar-nav justify-content-end flex-grow-1 pe-3 me-auto mb-2 mb-lg-0">
 
         <!-- Nav List -->
+
+        <li class="nav-item mb-2">
+          <a id="AccountsNav" class="nav-link" aria-current="page" href="users">
+          <svg id="people-circle" width="26" height="26" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg><br>Account</a>
+        </li>
+
         <li class="nav-item">
           <a id="HomepageNav" class="nav-link active" aria-current="page" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
@@ -92,7 +99,7 @@
             </svg><br>Home</a>
         </li>
         <li class="nav-item">
-          <a id="ProductspageNav" class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+          <a id="ProductspageNav" class="nav-link" href="products"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
             <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
             </svg>
@@ -108,10 +115,11 @@
 
             <!-- Dropdown Menu -->
           <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-            <li><a id="expertisesNav" class="dropdown-item" href="#">Expertises</a></li>
-            <li><a id="applicationsNav" class="dropdown-item" href="#">Applications</a></li>
+            <li><h6 class="dropdown-header text-dark">Assets</h6></li>
+            <li class="nav-item"><a id="expertisesNav" class="dropdown-item" href="sites/Developers">Expertises</a></li>
+            <li class="nav-item"><a id="applicationsNav" class="dropdown-item" href="navigations/Applications">Applications</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a id="intelligencesNav" class="dropdown-item" href="#">Intelligences</a></li>
+            <li class="nav-item"><a id="intelligencesNav" class="dropdown-item" href="navigations/Intelligences">Intelligences</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -121,10 +129,11 @@
 
             <!-- Dropdown Menu -->
           <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-            <li><a id="webdevelopmentsNav" class="dropdown-item" href="#">Web Developments</a></li>
-            <li><a id="computingprogrammingsNav" class="dropdown-item" href="#">Computing Programmings</a></li>
+            <li><h6 class="dropdown-header text-dark">Services</h6></li>
+            <li class="nav-item"><a id="webdevelopmentsNav" class="dropdown-item" href="navigations/Web-Developments">Web Developments</a></li>
+            <li class="nav-item"><a id="computingprogrammingsNav" class="dropdown-item" href="navigations/Computing-Programmings">Computing Programmings</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a id="ethicalhackingsNav" class="dropdown-item" href="#">Ethical Hackings</a></li>
+            <li class="nav-item"><a id="ethicalhackingsNav" class="dropdown-item" href="navigations/Ethical-Hackings">Ethical Hackings</a></li>
           </ul>
         </li>
       </ul> <!-- Close Nav List -->
@@ -160,12 +169,12 @@
       <div id="footer-container-01" class="align-content-center">
 
           <ul class="nav justify-content-center">
-          <li class="nav-item"><a id="developersNav" href="#" class="nav-link px-2">Developers</a></li>
+          <li class="nav-item"><a id="developersNav" href="sites/Developers" class="nav-link px-2">Developers</a></li>
           <li class="nav-item"><a id="careersNav" href="#" class="nav-link px-2">Careers</a></li>
-          <li class="nav-item"><a id="termspolicyNav" href="#" class="nav-link px-2">Terms · Policy</a></li>
+          <li class="nav-item"><a id="termspolicyNav" href="#" class="nav-link px-2">Terms &middot; Policy</a></li>
           <li class="nav-item"><a id="creditsNav" href="#" class="nav-link px-2">Credits</a></li>
-          <li class="nav-item"><a id="faqsNav" href="#" class="nav-link px-2">FAQs</a></li>
           <li class="nav-item"><a id="aboutNav" href="#" class="nav-link px-2">About</a></li>
+          <li class="nav-item"><a id="faqsNav" href="sites/FAQs" class="nav-link px-2">FAQs</a></li>
           </ul>
           <hr id="footer-hr" class="">
 
@@ -180,9 +189,9 @@
           </strong>
 
         <ul class="nav justify-content-center list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted" href="https://twitter.com/CamunitedTeam" target="_blank" rel="noopener" rel="onopener noreferrer"><svg class="bi" width="24" height="24" opacity="50%"><use xlink:href="#twitter"/></svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/camunitedteam/" target="_blank" rel="noopener" rel="onopener noreferrer"><svg class="bi" width="24" height="24" opacity="50%"><use xlink:href="#instagram"/></svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/CamunitedTeam" target="_blank" rel="noopener" rel="onopener noreferrer"><svg class="bi" width="24" height="24" opacity="50%"><use xlink:href="#facebook"/></svg></a></li>
+        <li class="ms-3"><a title="Twitter" class="text-muted" href="https://twitter.com/CamunitedTeam" target="_blank" rel="noopener" rel="onopener noreferrer"><svg class="bi" width="24" height="24" opacity="50%"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a title="Instagram" class="text-muted" href="https://www.instagram.com/camunitedteam/" target="_blank" rel="noopener" rel="onopener noreferrer"><svg class="bi" width="24" height="24" opacity="50%"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a title="Facebook" class="text-muted" href="https://www.facebook.com/CamunitedTeam" target="_blank" rel="noopener" rel="onopener noreferrer"><svg class="bi" width="24" height="24" opacity="50%"><use xlink:href="#facebook"/></svg></a></li>
         </ul>
       </div>
 
@@ -190,12 +199,31 @@
 
         <div id="footer-container-02" class="align-content-center">
           <div class="container">
-            <div id="rightFooter-logo"><svg id="rightFooter-logo-svg" data-name="Camunited-Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 2000" width="48" height="48"><use xlink:href="#header-brand-img"/></svg>
-            
-            <div id="rightFooter-brand" class="text-dark"><p style="text-decoration: none; font-family: 'agisbold', Arial, sans-serif; font-weight: bold; font-size: 1.5rem;">CAMUNITED</p></div>
-            </div>
+
+          <div id="languageNav" class="dropup">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropupMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+              </svg> English
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropupMenuButton">
+              <li><h6 class="dropdown-header text-dark">Languages</h6></li>
+              <li class="nav-item"><a class="dropdown-item" href="#">English</a></li>
+              <li class="nav-item"><a class="dropdown-item" href="zh-Hans-CN">中文</a></li>
+              <li class="nav-item"><a class="dropdown-item" href="km-KH">ភាសាខ្មែរ</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="nav-item"><a class="dropdown-item" href="#">Google Translate</a></li>
+            </ul>
           </div>
-        </div>
+
+            <div id="rightFooter-logo"><svg id="rightFooter-logo-svg" data-name="Camunited-Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 2000" width="48" height="48"><use xlink:href="#header-brand-img"/></svg>
+            </div>
+
+            <div id="rightFooter-brand" class="text-dark"><p style="text-decoration: none; font-family: 'agisbold', Arial, sans-serif; font-weight: bold; font-size: 1.5rem;">CAMUNITED</p>
+            </div>
+            
+          </div> <!-- DIV End container -->
+        </div>   <!-- DIV End footer-container-02 --> 
 
     </div>
   </footer>
@@ -204,7 +232,7 @@
 
       <!-- Arrow Up Fixed -->
 <div id="Arrowup" class="fixed-bottom">
-  <a href="#" id="Arrowup-a">
+  <a href="#" id="Arrowup-a" title="Go up!">
   <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#000000" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
   <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
   </svg>
