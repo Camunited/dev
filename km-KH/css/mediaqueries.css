@@ -1,20 +1,22 @@
-		/* // Min-width*/
-/* // X-Small devices (portrait phones, less than 576px) */
+
+
+		/*  Min-width */
+/*  X-Small devices (portrait phones, less than 576px) */
 @media (min-width: 0px) {
 	#header-nav {
 	box-shadow: 0px 0.5px 5px #2c2c2c;
 	}
 	#header-brand-img {
-		width: 25px;
-		height: 25px;
+		width: 27px;
+		height: 27px;
 	}
 	#navbar-brand-branding {
 		top: 3px;
-		font-size: 1rem;
+		font-size: 1.2rem;
 		font-family: 'agisbold', Arial, sans-serif;
 	}
 	#navbarToggle {
-		height: 35px;
+		height: 32px;
 	}
 	#content-Jumbotron-01 {
 		position: relative;
@@ -100,20 +102,20 @@
 	left: 89vw;
 	}
 }
-/* // No media query for `xs` since this is the default in Bootstrap*/
+/*  No media query for `xs` since this is the default in Bootstrap*/
 
-/* // Small devices (landscape phones, 576px and up)*/
+/*  Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {  
 	#header-nav {
 	box-shadow: 0px 0.8px 8px #2c2c2c;
 	}
 		#header-brand-img {
-		width: 40px;
-		height: 40px;
+		width: 44px;
+		height: 44px;
  	}
  	#navbar-brand-branding {
 		top: 3px;
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 		font-family: 'agisbold', Arial, sans-serif;
 	}
 	#navbarToggle {
@@ -207,19 +209,18 @@
 	}
 }
 
-
-/*// Medium devices (tablets, 768px and up)*/
+/*  Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
 	#header-nav {
 	box-shadow: 0px 1px 11px #2c2c2c;
 	}
 	#header-brand-img {
-		width: 50px;
-		height: 50px;
+		width: 51px;
+		height: 51px;
 	}
 	#navbar-brand-branding {
 		top: 3px;
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 		font-family: 'agisbold', Arial, sans-serif;
 	}
 	#navbarToggle {
@@ -262,9 +263,23 @@
 	bottom: 20px;
 	left: 93.5vw;
 	}
+	body {
+		font-size: 1.3rem;
+	}
+	#main-jumbotron {
+		font-size: 1.3rem;
+	}
+	#footer-container-01 {
+	width: 55vw;
+	margin-right: 5px;
+	margin-top: 8px;
+	}
+	#footer-container-02 {
+	width: 45vw;
+	}
  }
 
-/*// Large devices (desktops, 992px and up)*/
+/*  Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
 	#header-nav {
 	box-shadow: 0px 1px 14px #2c2c2c;
@@ -277,7 +292,7 @@
 	}
 	#navbar-brand-branding {
 		top: 4.5px;
-		font-size: 1.9rem;
+		font-size: 2rem;
 		font-family: 'agisbold', Arial, sans-serif;
 		position: relative;
 		left: 1.5rem;
@@ -286,11 +301,6 @@
 		position: relative;
 		margin-top: 84px;
 		background: #00aeef;
-	}
-	#nav-list {
-	float: right;
-	position: relative;
-	right: 7rem;
 	}
 				/*Loading GIF*/
 
@@ -372,9 +382,37 @@
 	bottom: 20px;
 	left: 94vw;
 	}
+
+	#nav-list {
+	float: right;
+	position: relative;
+	right: 0.6rem;
+	}
+	#AccountsNav {
+		display: none;
+	}
+	/*#HomepageNav {
+		box-shadow: -0.2px 0px 4px #2c2c2c;
+	}*/
+
+	#searchformNav {
+		max-width: 9.7rem;
+	}
+	#footer-container-01 {
+	width: 50vw;
+	margin-right: 10px;
+	margin-top: 8px;
+	}
+	#footer-container-02 {
+	width: 50vw;
+	}
+	.rounded-nav {
+		background-color: transparent !important;
+	}
+
 }
 
-/*// X-Large devices (large desktops, 1200px and up)*/
+/*  X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
 	#header-nav {
 	box-shadow: 0px 1px 16px #2c2c2c;
@@ -387,7 +425,7 @@
 	}
 	#navbar-brand-branding {
 		top: 5px;
-		font-size: 2.2rem;
+		font-size: 2.3rem;
 		font-family: 'agisbold', Arial, sans-serif;
 		position: relative;
 		left: 1.5rem;
@@ -429,9 +467,23 @@
 	bottom: 20px;
 	left: 94vw;
 	}
+		body {
+		font-size: 1.5rem;
+	}
+	#main-jumbotron {
+		font-size: 1.5rem;
+	}
+	#footer-container-01 {
+	width: 47vw;
+	margin-right: 10px;
+	margin-top: 8px;
+	}
+	#footer-container-02 {
+	width: 53vw;
+	}
 }
 
-/*// XX-Large devices (larger desktops, 1400px and up)*/
+/*  XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) { 
 	#header-nav {
 	box-shadow: 0px 1px 17px #2c2c2c;
@@ -444,7 +496,7 @@
 	}
 	#navbar-brand-branding {
 		top: 6px;
-		font-size: 2.7rem;
+		font-size: 2.9rem;
 		font-family: 'agisbold', Arial, sans-serif;
 		position: relative;
 		left: 1.5rem;
@@ -488,21 +540,93 @@
 	}
 }
 
-		// Max-width
-/*// `xs` returns only a ruleset and no media query
-// ... { ... }
 
-// `sm` applies to x-small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { ... }*/
 
-/*// `md` applies to small devices (landscape phones, less than 768px)*/
+		/*  Max-width */
+/*  `xs` returns only a ruleset and no media query*/
+ ... { ... }
+
+/*   `sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+	.flex-sm-button {
+		position: relative;
+		left: 22vw !important;
+	}
+ }
+
+/*   `md` applies to small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) { ... }
 
-/*// `lg` applies to medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) { ... }
+/*   `lg` applies to medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+	#nav-list {
+	float: right;
+	position: relative;
+	left: 0.5rem;
+	}
+	#searchformNav {
+		display: none;
+	}
+	.collapsednav-transparent {	
+		background-color: transparent !important;
+	}
+	#signinNav {
+		position: relative;
+		right: 1.7rem;
+	}
+ }
 
-/*// `xl` applies to large devices (desktops, less than 1200px)*/
+/*   `xl` applies to large devices (desktops, less than 1200px)*/
 @media (max-width: 1199.98px) { ... }
 
-/*// `xxl` applies to x-large devices (large desktops, less than 1400px)*/
+/*   `xxl` applies to x-large devices (large desktops, less than 1400px)*/
 @media (max-width: 1399.98px) { ... }
+
+
+
+		/*  Bordering Width  */
+@media (min-width: 0px) and (max-width: 575.98px) { 
+	#signin-button {
+	font-size: 0.7rem;
+	}
+	#signup-button {
+		font-size: 0.7rem;
+	}
+	.navbar-toggler-icon {
+	width: 1.2em;
+  	height: 1.2em;
+  	position: relative;
+  	bottom: 1px;
+	}
+	#footer-container-02 {
+	margin-left: 0px;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding-left: 0px;
+}
+ }
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	#signin-button {
+	font-size: 0.9rem;
+	}
+	#signup-button {
+		font-size: 0.9rem;
+	}
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	#signin-button {
+	font-size: 1rem;
+	}
+	#signup-button {
+		font-size: 1rem;
+	}
+ }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+@media (min-width: 1200px) and (max-width: 1399.98px) { ... }
+
+@media (min-width: 1400px) { ... }

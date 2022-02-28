@@ -1,4 +1,4 @@
-function myFunction() {
+function showPassword() {
   var x = document.getElementById("floatingPassword");
   if (x.type === "password") {
     x.type = "text";
@@ -6,4 +6,4 @@ function myFunction() {
     x.type = "password";
   }
 }
-$('.your-checkbox').prop('indeterminate', true)
+$('.your-checkbox').prop('indeterminate', true);

@@ -4,10 +4,14 @@
 
       var camunited = {};
 
-      var HomeXml = "index.html";
+      // var HomeXml = "index.html";
+      var XlinkSVGHtml = "assets/svg/xlink-svg.html";
+      var XlinkSVGsHtml = "assets/svg/xlink-svgs.html";
 
        // Accounts
-      var usersHtml = "users/index.html";
+      // var usersHtml = "users/index.html";
+      var signupHtml = "users/signup/index.html";
+      var signinHtml = "users/signin/index.html";
 
        // Navigations
       var homeHtml = "navigations/Home/home-snippet.html";
@@ -50,14 +54,38 @@
       };
 
 
-      var showHomeXml = function (selector) {
-            var html = global.$camunited.$homexmldbs
-            insertHtml(selector, html);
+      // var showHomeXml = function (selector) {
+      //       var html = global.$camunited.$homexmldbs
+      //       insertHtml(selector, html);
+      // };
+
+
+      function showPassword() {
+        showPassword() = LocalshowPassword();
+        var x = document;
+        document += global.$camunited.$signupnavdbs
+          x.querySelector("#floatingPassword")
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+
+          x.querySelector("#customCheck1")
+                .addEventListener("click", function () {
+                    LocalshowPassword();
+        });
+
       };
 
 
-            // Accounts Function()
-      var switchAccountsNavToActive = function () {
+
+
+
+
+
+            // Sign up Function()
+      var switchNothingToActive = function () {
 
         // Remove 'active' from AccountsNav button
         var classes = document.querySelector("#AccountsNav").className;
@@ -114,14 +142,75 @@
         classes = classes.replace(new RegExp(" active", "g"), "");
         document.querySelector("#aboutNav").className = classes;
         
-
-        // Add 'active' to menu button if not already there
-        classes = document.querySelector("#AccountsNav").className;
-        if (classes.indexOf("active") == -1) {
-          classes += " active";
-          document.querySelector("#AccountsNav").className = classes;
-        }
       };
+
+
+            // Accounts Function()
+      // var switchAccountsNavToActive = function () {
+
+      //   // Remove 'active' from AccountsNav button
+      //   var classes = document.querySelector("#AccountsNav").className;
+      //   classes = classes.replace(new RegExp(" active", "g"), "");
+      //   document.querySelector("#AccountsNav").className = classes;
+
+      //   // Remove 'active' from Home button
+      //   var classes = document.querySelector("#HomepageNav").className;
+      //   classes = classes.replace(new RegExp(" active", "g"), "");
+      //   document.querySelector("#HomepageNav").className = classes;
+
+      //   // Remove 'active' from Products button
+      //   var classes = document.querySelector("#ProductspageNav").className;
+      //   classes = classes.replace(new RegExp(" active", "g"), "");
+      //   document.querySelector("#ProductspageNav").className = classes;
+
+      //   // Remove 'active' from Assets button
+      //   var classes = document.querySelector("#AssetspageNav").className;
+      //   classes = classes.replace(new RegExp(" active", "g"), "");
+      //   document.querySelector("#AssetspageNav").className = classes;
+
+      //   // Remove 'active' from Services button
+      //   var classes = document.querySelector("#ServicespageNav").className;
+      //   classes = classes.replace(new RegExp(" active", "g"), "");
+      //   document.querySelector("#ServicespageNav").className = classes;
+
+      //   // Remove 'active' from DevelopersNav button
+      //   var classes = document.querySelector("#developersNav").className;
+      //   classes = classes.replace(new RegExp(" active", "g"), "");
+      //   document.querySelector("#developersNav").className = classes;
+
+      //   // Remove 'active' from careersNav button
+      //   var classes = document.querySelector("#careersNav").className;
+      //   classes = classes.replace(new RegExp(" active", "g"), "");
+      //   document.querySelector("#careersNav").className = classes;
+
+      //   // Remove 'active' from termspolicyNav button
+      //   var classes = document.querySelector("#termspolicyNav").className;
+      //   classes = classes.replace(new RegExp(" active", "g"), "");
+      //   document.querySelector("#termspolicyNav").className = classes;
+
+      //   // Remove 'active' from creditsNav button
+      //   var classes = document.querySelector("#creditsNav").className;
+      //   classes = classes.replace(new RegExp(" active", "g"), "");
+      //   document.querySelector("#creditsNav").className = classes;
+
+      //   // Remove 'active' from faqsNav button
+      //   var classes = document.querySelector("#faqsNav").className;
+      //   classes = classes.replace(new RegExp(" active", "g"), "");
+      //   document.querySelector("#faqsNav").className = classes;
+
+      //   // Remove 'active' from aboutNav button
+      //   var classes = document.querySelector("#aboutNav").className;
+      //   classes = classes.replace(new RegExp(" active", "g"), "");
+      //   document.querySelector("#aboutNav").className = classes;
+        
+
+      //   // Add 'active' to menu button if not already there
+      //   classes = document.querySelector("#AccountsNav").className;
+      //   if (classes.indexOf("active") == -1) {
+      //     classes += " active";
+      //     document.querySelector("#AccountsNav").className = classes;
+      //   }
+      // };
 
 
             // Navigation Objects
@@ -1209,7 +1298,7 @@
       };
 
 
-
+        // DOM
       // On page load (before images or CSS)
       document.addEventListener("DOMContentLoaded", function (event) {
 
@@ -1221,6 +1310,20 @@
             // localshowhomeHtml() = showhomeHtml();
 
               // AjaxUtils Request
+
+
+            $ajaxUtils.sendGetRequest(
+              XlinkSVGHtml,
+              function (responseText) {
+                  var xlinksvgdbs = responseText;
+                  global.$camunited.$xlinksvgdbs = xlinksvgdbs
+                document.querySelector("#XlinkSVG")
+                  .innerHTML = xlinksvgdbs;
+              },
+              false);
+
+
+
             $ajaxUtils.sendGetRequest(
               gifloadingHtml,
               function (responseText) {
@@ -1243,32 +1346,91 @@
 
 
             $ajaxUtils.sendGetRequest(
-              HomeXml,
+              XlinkSVGsHtml,
               function (responseText) {
-                  var homexmldbs = responseText;
-                  global.$camunited.$homexmldbs = homexmldbs
+                  var xlinksvgsdbs = responseText;
+                  global.$camunited.$xlinksvgsdbs = xlinksvgsdbs
+                document.querySelector("#XlinkSVGs")
+                  .innerHTML = xlinksvgsdbs;
               },
               false);
 
 
 
+            // $ajaxUtils.sendGetRequest(
+            //   HomeXml,
+            //   function (responseText) {
+            //       var homexmldbs = responseText;
+            //       global.$camunited.$homexmldbs = homexmldbs
+            //   },
+            //   false);
+
+
+
+
+
               // Navigations Objects
-                  // Accounts Nav
-            document.querySelector("#AccountsNav")
+              //     Sign up Nav
+            document.querySelector("#signup-button")
               .addEventListener("click", function () {
 
                 showLoading("#main-jumbotron");
-                switchAccountsNavToActive();
+                switchNothingToActive();
 
                 // Call server to get the name
                 $LocalajaxUtils
-                  .sendGetRequest(usersHtml, 
+                  .sendGetRequest(signupHtml, 
                     function (responseText) {
-                      var accountsnavdbs = responseText;
-                      global.$camunited.$accountsnavdbs = accountsnavdbs
+                      var signupnavdbs = responseText;
+                      global.$camunited.$signupnavdbs = signupnavdbs
+                      document.querySelector("#main-jumbotron")
+                        .innerHTML = signupnavdbs;
                     },
                     false);
+                                  LocalshowPassword();
             });
+
+
+              //     Sign in Nav
+            document.querySelector("#signin-button")
+              .addEventListener("click", function () {
+
+                showLoading("#main-jumbotron");
+                switchNothingToActive();
+
+                // Call server to get the name
+                $LocalajaxUtils
+                  .sendGetRequest(signinHtml, 
+                    function (responseText) {
+                      var signinnavdbs = responseText;
+                      global.$camunited.$signupnavdbs = signinnavdbs
+                      document.querySelector("#main-jumbotron")
+                        .innerHTML = signinnavdbs;
+                    },
+                    false);
+                                  LocalshowPassword();
+            });
+
+
+
+
+              // Navigations Objects
+                  // Accounts Nav
+            // document.querySelector("#AccountsNav")
+            //   .addEventListener("click", function () {
+
+            //     showLoading("#main-jumbotron");
+            //     switchAccountsNavToActive();
+
+            //     // Call server to get the name
+            //     $LocalajaxUtils
+            //       .sendGetRequest(usersHtml, 
+            //         function (responseText) {
+            //           var accountsnavdbs = responseText;
+            //           global.$camunited.$accountsnavdbs = accountsnavdbs
+            //         },
+            //         false);
+            // });
 
 
             document.querySelector("#ProductspageNav")
