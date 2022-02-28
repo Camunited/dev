@@ -1303,7 +1303,8 @@
       document.addEventListener("DOMContentLoaded", function (event) {
 
             // On first load, show home view DOMLoaded
-            showLoading("#main-jumbotron");
+            // showLoading("#main-jumbotron");
+            showhomeHtml("#main-jumbotron");
 
             $LocalajaxUtils = $ajaxUtils //For changing scope
 
