@@ -1330,8 +1330,8 @@
               function (responseText) {
                   var gifloadingdbs = responseText;
                   global.$camunited.$gifloadingdbs = gifloadingdbs
-                document.querySelector("#main-jumbotron")
-                  .innerHTML = gifloadingdbs;
+                // document.querySelector("#main-jumbotron")
+                //   .innerHTML = gifloadingdbs;
               },
               false);
 
