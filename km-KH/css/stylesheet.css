@@ -6,8 +6,9 @@
 }
 		/* Body */
 body {
-	background-color: #808080;
-	color: white;
+	background: url('/assets/img/body/look-sky-from-foot-resized.png')
+		no-repeat top !important;
+	color: var(--bs-dark);
 	padding: 0;
 	margin: 0;
 }
@@ -94,73 +95,73 @@ a {
 		/* Jumbotron */
 
 #content-Jumbotron-01 {
-	position: relative;
-	background-color: #00aeef !important;
+		background: url('/assets/img/jumbotron-01/configurationofworks-topcutting.png')
+			no-repeat right !important;
+}
+
+#main-content {
+	background: url('/assets/img/jumbotron-01/configurationofworks-topcutting.png')
+		no-repeat left !important;
+
 }
 #content-Jumbotron-02 {
-	background-color: #00aeef !important;
-}
-h.display-6 {
-	font-family: 'sarun_pro_boldbold', Arial, sans-serif;
-	font-size: 1.5rem;
+	background: url('/assets/img/jumbotron-02/city-skyline-center-resized-bottom-extended.png')
+		no-repeat top !important;
 }
 #main-content {
 	padding-top: 1.5rem;
 }
 
-
     	/***  Footers  ***/
 footer#page-Footer {
 	position: relative;
 	color: black;
-	background-color: #FFFFFF;
 	padding: 0;
 	margin: 10px;
 	height: auto;
 }
 #div-Footer {
 	position: absolute;
-	background-color: #FFFFFF;
+	background: url('/assets/img/footer/footer-bg-01.png')
+		no-repeat top !important;
 	margin: 0;
 	padding: 0;
 	height: auto;
+	box-shadow: -1px 0 15px #2c2c2c;
 }
 #footer-container-01 {
-	background-color: #FFFFFF;
+	border: 1px solid black;
+	border-radius: 0.7rem;
 	width: 60vw;
 	margin-right: 5px;
 }
-.vl {
-	border-left: 2px solid blue;
-	position: relative;
-	height: auto;
-	margin: 15px;
-	margin-left: -1px;
-	left: 2.4vw;
-}
 #footer-container-02 {
-	background-color: #FFFFFF;
+	border: 1px solid black;
+	border-radius: 0.7rem;
 	width: 40vw;
-	margin-left: 15px;
-	margin-top: 15px;
-	margin-right: 5px;
-	margin-bottom: 10px;
-	padding-left: 15px;
+	margin-left: 2px;
+	margin-top: 2px;
+	margin-right: 0;
+	padding-left: 13px;
 }
 #footer-hr {
-	width: 85%;
+	width: 90%;
 	position: relative;
-	left: 4.5vw;
+	left: 1vw;
 	margin: 7px;
 }
 #rightFooter-logo {
-
+	margin-top: 10px;
 }
 #rightFooter-logo-svg {
 	position: relative;
 	left: 45.8px;
 }
 #rightFooter-brand {
+}
+#rightfooter-branding {
+	float: right;
+	margin-right: 0.5rem;
 }
 
 		/* Arrow up */
@@ -177,18 +178,11 @@ footer#page-Footer {
 	height: auto;
 }
 
-		/*  Fonts Apply  */
-.agis {
-		font-family: 'agisbold', Arial, sans-serif !important;
-}
-.sarun-pro {
-		font-family: 'sarun_pro_boldbold', Arial, sans-serif !important;
-}
-.tt-firs-neue {
-		font-family: 'tt_firs_neuebold', Arial, sans-serif !important;
-}
 
 		/*  Camunited Background Color  */
+.camunited-bg-light {
+	background-color: #f8f9fa !important;
+}
 .camunited-bg-gray {
 	background-color: #808080 !important;
 }
@@ -210,8 +204,14 @@ footer#page-Footer {
 .camunited-bg-yellow {
 	background-color: #fff200 !important;
 }
+.camunited-bg-dark {
+	background-color: #212529 !important;
+}
 
 		/*  Camunited Color Apply */
+.camunited-light {
+	color: #f8f9fa !important;
+}
 .camunited-gray {
 	color: #808080 !important;
 }
@@ -232,6 +232,9 @@ footer#page-Footer {
 }
 .camunited-yellow {
 	color: #fff200 !important;
+}
+.camunited-dark {
+	color: #212529 !important;
 }
 
 		/*Sign in Button */
@@ -265,6 +268,7 @@ footer#page-Footer {
 #languageNav {
 	position: relative;
 	bottom: 1rem;
+	left: 0.3rem;
 }
 
 		/*Sign Up*/
@@ -310,7 +314,7 @@ footer#page-Footer {
   width: 380px;
 }
 
-		/* Sign in */
+		/* Sign in NAV */
 
 #main-signin {
   position: static;
@@ -346,7 +350,7 @@ footer#page-Footer {
   border-top-right-radius: 0;
 }
 
-#customCheck2 {
+/*#customCheck2 {
   position: relative;
   left: 11vw;
   margin-top: .7rem;
@@ -356,7 +360,7 @@ footer#page-Footer {
   margin-top: 0.5rem;
   position: relative;
   left: 9rem;
-}
+}*/
 #remember-me input {
   height: 18px;
   width: 18px;
@@ -365,15 +369,16 @@ footer#page-Footer {
   right: 2px;
 }
 #signin-button-div {
-  border-radius: 25px;
+  border-radius: 0.4rem;
   max-width: auto;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
 }
-#brand-logo {
+/*#brand-logo {
   position: relative;
   top: 1rem;
-  right: 5px;
-  left: 9.2rem;
-}
+  left: 12vw;
+}*/
 .rounded-7 {
 	border-radius: 0.7rem;
 }

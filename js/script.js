@@ -5,8 +5,8 @@
       var camunited = {};
 
       // var HomeXml = "index.html";
-      var XlinkSVGHtml = "assets/svg/xlink-svg.html";
-      var XlinkSVGsHtml = "assets/svg/xlink-svgs.html";
+      var XlinkSVGHtml = "/../assets/svg/xlink-svg.html";
+      var XlinkSVGsHtml = "/../assets/svg/xlink-svgs.html";
 
        // Accounts
       // var usersHtml = "users/index.html";
@@ -60,27 +60,24 @@
       // };
 
 
-      function showPassword() {
-        showPassword() = LocalshowPassword();
-        var x = document;
-        document += global.$camunited.$signupnavdbs
-          x.querySelector("#floatingPassword")
-        if (x.type === "password") {
-          x.type = "text";
-        } else {
-          x.type = "password";
-        }
+      // var camunited.signupclickEvents = function (bindshowPassword,signupshowPassword) {
 
-          x.querySelector("#customCheck1")
-                .addEventListener("click", function () {
-                    LocalshowPassword();
-        });
-
-      };
-
-
-
-
+      //     function signupshowPassword() {
+      //     var document = global.$camunited.$signupnavdbs
+      //     var x = document.getElementById("floatingPassword");
+      //     if (x.type === "password") {
+      //       x.type = "text";
+      //     } else {
+      //       x.type = "password";
+      //     }
+      //   };
+      //   function bindshowPassword() {
+      //   document.querySelector("#customCheck1")
+      //         .addEventListener("click", function () {
+      //           signupshowPassword(); 
+      //       });
+      //     };
+      // };
 
 
 
@@ -1303,14 +1300,21 @@
       document.addEventListener("DOMContentLoaded", function (event) {
 
             // On first load, show home view DOMLoaded
-            // showLoading("#main-jumbotron");
-            showhomeHtml("#main-jumbotron");
+
 
             $LocalajaxUtils = $ajaxUtils //For changing scope
 
-            // localshowhomeHtml() = showhomeHtml();
 
               // AjaxUtils Request
+            $ajaxUtils.sendGetRequest(
+              gifloadingHtml,
+              function (responseText) {
+                  var gifloadingdbs = responseText;
+                  global.$camunited.$gifloadingdbs = gifloadingdbs
+                document.querySelector("#main-jumbotron")
+                  .innerHTML = gifloadingdbs;
+              },
+              false);
 
 
             $ajaxUtils.sendGetRequest(
@@ -1326,14 +1330,15 @@
 
 
             $ajaxUtils.sendGetRequest(
-              gifloadingHtml,
+              XlinkSVGsHtml,
               function (responseText) {
-                  var gifloadingdbs = responseText;
-                  global.$camunited.$gifloadingdbs = gifloadingdbs
-                // document.querySelector("#main-jumbotron")
-                //   .innerHTML = gifloadingdbs;
+                  var xlinksvgsdbs = responseText;
+                  global.$camunited.$xlinksvgsdbs = xlinksvgsdbs
+                document.querySelector("#XlinkSVGs")
+                  .innerHTML = xlinksvgsdbs;
               },
               false);
+
 
             $ajaxUtils.sendGetRequest(
               homeHtml,
@@ -1342,17 +1347,6 @@
                   global.$camunited.$homedbs = homedbs
                 document.querySelector("#main-jumbotron")
                   .innerHTML = homedbs;
-              },
-              false);
-
-
-            $ajaxUtils.sendGetRequest(
-              XlinkSVGsHtml,
-              function (responseText) {
-                  var xlinksvgsdbs = responseText;
-                  global.$camunited.$xlinksvgsdbs = xlinksvgsdbs
-                document.querySelector("#XlinkSVGs")
-                  .innerHTML = xlinksvgsdbs;
               },
               false);
 
@@ -1373,23 +1367,53 @@
               // Navigations Objects
               //     Sign up Nav
             document.querySelector("#signup-button")
-              .addEventListener("click", function () {
+              .addEventListener("click", function (requestSignupHtml, 
+                                                    signupshowPassword, 
+                                                    bindshowPassword) {
+                        function requestSignupHtml(){
+                          showLoading("#main-jumbotron");
+                          switchNothingToActive();
 
-                showLoading("#main-jumbotron");
-                switchNothingToActive();
+                          // Call server to get the name
+                          $LocalajaxUtils
+                            .sendGetRequest(signupHtml, 
+                              function (responseText) {
+                                var signupnavdbs = responseText;
+                                global.$camunited.$signupnavdbs = signupnavdbs
+                                document.querySelector("#main-jumbotron")
+                                  .innerHTML = signupnavdbs;
+                              },
+                              false);  
+                        };
+           
+                        function signupshowPassword(selector, onclick){
+                            var targetElem = document.querySelector(selector);
+                            function onclick (){
+                                var document = signupnavdbs
+                                var x = document.getElementById("floatingPassword");
+                                if (x.type === "password") {
+                                  x.type = "text";
+                                } else {
+                                  x.type = "password";
+                                }
+                              };
+                            };
 
-                // Call server to get the name
-                $LocalajaxUtils
-                  .sendGetRequest(signupHtml, 
-                    function (responseText) {
-                      var signupnavdbs = responseText;
-                      global.$camunited.$signupnavdbs = signupnavdbs
-                      document.querySelector("#main-jumbotron")
-                        .innerHTML = signupnavdbs;
-                    },
-                    false);
-                                  LocalshowPassword();
+                        function bindshowPassword(selector){
+                          var onclick = function (){
+                              document.querySelector("#customCheck1")
+                              .addEventListener("click", function () {
+                                bindshowPassword();
+                            });
+                          };
+                          signupshowPassword(selector, onclick); 
+                        };
+
+                    return requestSignupHtml();
+
             });
+
+
 
 
               //     Sign in Nav
@@ -1409,9 +1433,15 @@
                         .innerHTML = signinnavdbs;
                     },
                     false);
-                                  LocalshowPassword();
             });
 
+
+
+            //   //     #customCheck1
+            // document.querySelector("#customCheck1")
+            //   .addEventListener("click", function () {
+            //     signupshowPassword();
+            // });
 
 
 
@@ -1716,6 +1746,7 @@
       global.$camunited = camunited;
 
 })(window);
+
 
       // Fixing Mobile Nav Menu Automatic Collapse
 

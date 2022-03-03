@@ -5,8 +5,8 @@
       var camunited = {};
 
       // var HomeXml = "index.html";
-      var XlinkSVGHtml = "assets/svg/xlink-svg.html";
-      var XlinkSVGsHtml = "assets/svg/xlink-svgs.html";
+      var XlinkSVGHtml = "/../assets/svg/xlink-svg.html";
+      var XlinkSVGsHtml = "/../assets/svg/xlink-svgs.html";
 
        // Accounts
       // var usersHtml = "users/index.html";
@@ -58,28 +58,6 @@
       //       var html = global.$camunited.$homexmldbs
       //       insertHtml(selector, html);
       // };
-
-
-      function showPassword() {
-        showPassword() = LocalshowPassword();
-        var x = document;
-        document += global.$camunited.$signupnavdbs
-          x.querySelector("#floatingPassword")
-        if (x.type === "password") {
-          x.type = "text";
-        } else {
-          x.type = "password";
-        }
-
-          x.querySelector("#customCheck1")
-                .addEventListener("click", function () {
-                    LocalshowPassword();
-        });
-
-      };
-
-
-
 
 
 
@@ -1303,14 +1281,21 @@
       document.addEventListener("DOMContentLoaded", function (event) {
 
             // On first load, show home view DOMLoaded
-            // showLoading("#main-jumbotron");
-            showhomeHtml("#main-jumbotron");
+
 
             $LocalajaxUtils = $ajaxUtils //For changing scope
 
-            // localshowhomeHtml() = showhomeHtml();
 
               // AjaxUtils Request
+            $ajaxUtils.sendGetRequest(
+              gifloadingHtml,
+              function (responseText) {
+                  var gifloadingdbs = responseText;
+                  global.$camunited.$gifloadingdbs = gifloadingdbs
+                document.querySelector("#main-jumbotron")
+                  .innerHTML = gifloadingdbs;
+              },
+              false);
 
 
             $ajaxUtils.sendGetRequest(
@@ -1326,14 +1311,15 @@
 
 
             $ajaxUtils.sendGetRequest(
-              gifloadingHtml,
+              XlinkSVGsHtml,
               function (responseText) {
-                  var gifloadingdbs = responseText;
-                  global.$camunited.$gifloadingdbs = gifloadingdbs
-                // document.querySelector("#main-jumbotron")
-                //   .innerHTML = gifloadingdbs;
+                  var xlinksvgsdbs = responseText;
+                  global.$camunited.$xlinksvgsdbs = xlinksvgsdbs
+                document.querySelector("#XlinkSVGs")
+                  .innerHTML = xlinksvgsdbs;
               },
               false);
+
 
             $ajaxUtils.sendGetRequest(
               homeHtml,
@@ -1342,17 +1328,6 @@
                   global.$camunited.$homedbs = homedbs
                 document.querySelector("#main-jumbotron")
                   .innerHTML = homedbs;
-              },
-              false);
-
-
-            $ajaxUtils.sendGetRequest(
-              XlinkSVGsHtml,
-              function (responseText) {
-                  var xlinksvgsdbs = responseText;
-                  global.$camunited.$xlinksvgsdbs = xlinksvgsdbs
-                document.querySelector("#XlinkSVGs")
-                  .innerHTML = xlinksvgsdbs;
               },
               false);
 
@@ -1388,7 +1363,23 @@
                         .innerHTML = signupnavdbs;
                     },
                     false);
-                                  LocalshowPassword();
+                    
+                    function SignupshowPassword() {
+                      var x = global.$camunited.$signupnavdbs
+                        x.querySelector("#floatingPassword")
+                      if (x.type === "password") {
+                        x.type = "text";
+                      } else {
+                        x.type = "password";
+                      }
+
+                        x.querySelector("#customCheck1")
+                              .addEventListener("click", function () {
+                                  SignupshowPassword();
+                      });
+
+                    };
+
             });
 
 
