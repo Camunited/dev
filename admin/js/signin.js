@@ -6,4 +6,4 @@ function showPassword() {
     x.type = "password";
   }
 }
-$('.your-checkbox').prop('indeterminate', true);
+// $('.your-checkbox').prop('indeterminate', true);
