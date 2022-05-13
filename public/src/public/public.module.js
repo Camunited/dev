@@ -1,8 +1,10 @@
-(function() {
-"use strict";
+(function(){
+'use strict';
+
 /**
- * Public restaurant application. Includes the common module and ui-router.
+ * Public Peakhu application. Includes the supreme module and ui-router.
  */
-angular.module('public', ['ui.router', 'common']);
+
+angular.module('public', ['ui.router', 'supreme']);
 
 })();
