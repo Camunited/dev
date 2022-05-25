@@ -84,6 +84,11 @@ function routeConfig ($stateProvider) {
             url: 'jobopport',
             templateUrl: 'src/public/states/services/jobopport.html',
         })
+            // And more Navigation
+        // .state('public.home.action', {
+        //     url: 'action',
+        //     templateUrl: 'src/public/states/services/action.html',
+        // })
 
         // Skills States
         .state('public.home.skills', {

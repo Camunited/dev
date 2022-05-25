@@ -1,4 +1,4 @@
-// Peakhu @0.1.1 | (c) CAMUNITED Team. Copyrights reserved.
+// Peakhu v1.0.0 | (c) CAMUNITED Team. Copyrights reserved.
 
 const app = angular;
 

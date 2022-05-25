@@ -1,0 +1,15 @@
+{
+  "name": "peakhuservices",
+  "version": "1.0.0",
+  "description": "PEAKHU Services",
+  "main": "index.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+	"start":"browser-sync start --server --files *",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Camunited",
+  "license": "MIT"
+}
